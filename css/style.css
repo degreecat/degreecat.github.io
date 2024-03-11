@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Rubik";
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.rubik-font {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.separator {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 25px;
+    color: #353535;
+}
+
+#bold-text {
+    font-weight: 475px;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo, .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    padding-right: 10px;
+}
+
+.nav-links a {
+    margin: 20px;
+    color: #353535;
+    text-decoration: none;
+}
+
+/* Webpage */
+.overview {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Explanation */
+.explanation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 5%;
+}
+
+.explanation img {
+    width: 200px;
+    margin-right: 10px;
+}
+
+@media (min-width: 600px) {
+    .explanation img {
+        width: 280px;
+    }
+}
+
+button {
+    background-color: #FFFFFF;
+    color: #FF3F33;
+    border: 2px solid #FF3F33;
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin: 40px auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #FF3F33;
+    border-color: #FF3F33;
+    color: #FFFFFF
+}
+
+/* Availability */
+.availability {
+    color: #FFFFFF;
+    background-color: #FF3F33;
+    text-align: center;
+}
+
+#light {
+    font-size: 25px;
+    font-weight: 400px;
+}
+
+.institutions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 20px 25px;
+    gap: 5%;
+}
+
+#summary {
+    font-size: 25px;
+    font-weight: 450;
+}
+
+#summary span {
+    color: #FF3F33
+}
+
+#description {
+    font-size: 15px;
+}

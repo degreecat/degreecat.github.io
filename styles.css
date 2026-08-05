@@ -7,6 +7,10 @@
   --muted: #d1d1d1;
   --accent: #FF3F33;
   --accent-strong: #E0382D;
+  --red: #FF3F33;
+  --red-outline: #E0382D;
+  --blue: #2D68C4;
+  --blue-outline: #2152A0;
   --line: rgba(255, 255, 255, 0.12);
   --shadow: 0 18px 56px rgba(0, 0, 0, 0.28);
 }
@@ -35,7 +39,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 22px;
+  flex-wrap: nowrap;
+  padding: 16px 22px;
   border-radius: 18px;
   background: var(--surface);
   margin-bottom: 18px;
@@ -44,15 +49,14 @@ body {
 .logo-lockup {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
   width: auto;
-  max-width: 170px;
+  min-height: 56px;
 }
 
 .logo-lockup img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
+  width: auto;
+  height: 56px;
+  max-height: 56px;
   object-fit: contain;
   display: block;
 }
@@ -71,7 +75,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
-  border: 1.5px solid #E0382D;
+  border: 1.5px solid var(--red-outline);
   padding: 10px 16px;
   border-radius: 999px;
   transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
@@ -80,12 +84,12 @@ body {
 .contact-link:hover {
   transform: translateY(-1px);
   background: rgba(255, 63, 51, 0.12);
-  border-color: #FF3F33;
+  border-color: var(--red);
 }
 
 @media (max-width: 680px) {
-  .topbar {
-    justify-content: center;
+  .logo-lockup img {
+    max-height: 48px;
   }
 }
 
@@ -235,8 +239,42 @@ body {
 }
 
 .plan-card.featured {
-  border-color: rgba(255, 63, 51, 0.65);
-  background: linear-gradient(180deg, #27282b 0%, #1f2023 100%);
+  border: 1.5px solid var(--red-outline);
+  background: linear-gradient(180deg, #291919 0%, #1f2023 100%);
+  box-shadow: 0 22px 60px rgba(255, 63, 51, 0.18);
+}
+
+.plan-card.featured .plan-header h3 {
+  color: var(--red);
+}
+
+.plan-card.featured .price {
+  color: var(--red);
+}
+
+.plan-card.featured .plan-badge {
+  background: rgba(255, 63, 51, 0.12);
+  color: var(--red);
+  border: 1px solid var(--red-outline);
+}
+
+.plan-card.classroom {
+  border: 1.5px solid var(--blue-outline);
+  background: linear-gradient(180deg, #10224d 0%, #121c33 100%);
+  box-shadow: 0 22px 60px rgba(45, 104, 196, 0.16);
+}
+
+.plan-card.classroom .plan-header h3 {
+  color: var(--blue);
+}
+
+.plan-card.classroom .price {
+  color: var(--blue);
+}
+
+.plan-card.classroom .plan-header {
+  border-bottom: 1px solid rgba(45, 104, 196, 0.18);
+  padding-bottom: 10px;
 }
 
 .plan-header h3 {
@@ -277,20 +315,5 @@ body {
 
   .hero h1 {
     font-size: 2.4rem;
-  }
-
-  .topbar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-  }
-
-  .logo-lockup {
-    justify-content: center;
-  }
-
-  .contact-link {
-    width: fit-content;
-    margin: 0 auto;
   }
 }

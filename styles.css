@@ -157,10 +157,10 @@ body {
 }
 
 .cta-stack {
-  margin-top: 10px;
   display: grid;
   place-items: center;
-  gap: 10px;
+  row-gap: 14px;
+  padding-block: 14px 14px;
 }
 
 .app-store-button {

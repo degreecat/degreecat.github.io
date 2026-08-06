@@ -292,21 +292,6 @@ body {
   color: var(--red);
 }
 
-.plan-card.featured .plan-badge {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: rgba(255, 63, 51, 0.12);
-  color: var(--red);
-  border: 1px solid var(--red-outline);
-  margin-left: 0;
-}
-
-.plan-card.featured .plan-header {
-  position: relative;
-  padding-right: 116px;
-}
-
 .plan-card.classroom {
   border: 1.5px solid var(--blue-outline);
   background: linear-gradient(180deg, #10224d 0%, #121c33 100%);

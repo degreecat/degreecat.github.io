@@ -288,10 +288,6 @@ body {
   color: var(--red);
 }
 
-.plan-card.featured .price {
-  color: var(--red);
-}
-
 .plan-card.classroom {
   border: 1.5px solid var(--blue-outline);
   background: linear-gradient(180deg, #10224d 0%, #121c33 100%);
@@ -299,10 +295,6 @@ body {
 }
 
 .plan-card.classroom .plan-header h3 {
-  color: var(--blue);
-}
-
-.plan-card.classroom .price {
   color: var(--blue);
 }
 

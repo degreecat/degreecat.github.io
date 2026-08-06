@@ -103,7 +103,9 @@ body {
   display: grid;
   justify-items: center;
   text-align: center;
-  gap: 16px;
+  gap: 8px;
+  max-width: min(760px, 94vw);
+  margin-inline: auto;
 }
 
 .hero-icon-wrap {
@@ -147,14 +149,18 @@ body {
   color: var(--muted);
   font-size: 1.04rem;
   line-height: 1.8;
+  margin: 0;
 }
 
 .lead {
-  max-width: 720px;
+  max-width: 680px;
 }
 
 .cta-stack {
-  margin-top: 20px;
+  margin-top: 10px;
+  display: grid;
+  place-items: center;
+  gap: 10px;
 }
 
 .app-store-button {
@@ -187,6 +193,10 @@ body {
   line-height: 1.05;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .app-store-copy small {
   font-size: 0.72rem;
   opacity: 0.72;
@@ -197,7 +207,7 @@ body {
 }
 
 .fine-print {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .feature-band {
